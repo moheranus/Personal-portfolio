@@ -8,9 +8,7 @@ import ImageSlider2 from '../slider/ImageSlider2';
 const ModalPop2 = forwardRef((props, ref) => {
   const [open2, setOpen2] = useState(false);
 
-//   const onOpenModal2 = () => {
-//     setOpen2(true);
-//   };
+
 
   const onCloseModal2 = () => {
     setOpen2(false);

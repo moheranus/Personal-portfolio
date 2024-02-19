@@ -1,0 +1,9 @@
+{
+    "extends": "react-app",
+    "rules": {
+      "no-unused-vars": "off", // Disable warnings for unused variables
+      "jsx-a11y/anchor-has-content": "off" // Disable warnings for anchor elements without content
+      // Add more rules as needed
+    }
+  }
+  

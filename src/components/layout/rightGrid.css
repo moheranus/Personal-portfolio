@@ -144,20 +144,12 @@
    #experience{
       margin-top: 370px !important;
    }
-   #project{
-      /* margin-top: 700px !important; */
-   }
+   
 }
-@media (max-width: 343px){
-   #project{
-      /* margin-top: 740px !important; */
-   }
-}
+
 @media (max-width: 333px){
    #experience{
       margin-top: 390px !important;
    }
-   #project{
-      /* margin-top: 800px !important; */
-   }
+  
 }

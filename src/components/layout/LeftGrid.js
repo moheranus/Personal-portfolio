@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import "./leftGrid.css";
-import { FaGithub, FaLinkedin, FaInstagram, FaTelegram } from "react-icons/fa";
+import { FaGithub, FaLinkedin} from "react-icons/fa";
 import { MdOutgoingMail } from "react-icons/md";
 
 function LeftGrid() {
@@ -19,7 +19,7 @@ function LeftGrid() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const aboutSection = document.getElementById('about');
+      // const aboutSection = document.getElementById('about');
       const experienceSection = document.getElementById('experience');
       const projectSection = document.getElementById('project');
       const scrollPosition = window.scrollY;
