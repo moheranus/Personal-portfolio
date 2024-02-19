@@ -1,0 +1,71 @@
+
+.project-action{
+    /* border: 2px solid red; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-left: -20px;
+}
+.action-btn button{
+    padding: 10px 15px;
+    font-family: 'Poppins' sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(136, 0, 255);
+    cursor:pointer;
+    color: rgb(255, 255, 255);
+}
+.action-btn button a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+.action-btn button:hover{
+    background-color: rgb(7, 137, 137);
+}
+
+@media (max-width: 355px){
+    .action-btn button{
+        padding: 7px 10px;
+        font-size: 15px;
+    }
+ }
+
+
+
+ /* moodal  */
+ /* Modal container */
+.modal {
+    display: none; /* Hide modal by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1000; /* Ensure modal is on top of other content */
+  }
+  
+  /* Modal content */
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Close button */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  

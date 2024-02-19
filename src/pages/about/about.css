@@ -1,0 +1,27 @@
+
+/* .about-wrapper{
+    border: 2px solid red;
+} */
+.about-wrapper p{
+    line-height: 2;
+}
+.view-resume{
+    margin-top: 30px;
+}
+
+.view-resume button{
+    width: 100%;
+    padding: 10px 15px;
+    font-family: 'Poppins' sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(136, 0, 255);
+    cursor:pointer;
+    color: rgb(255, 255, 255);
+}
+.view-resume button:hover{
+    background-color: rgb(7, 137, 137);
+}

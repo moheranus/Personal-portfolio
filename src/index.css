@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  color: #3D3B40;
+  min-width: 330px;
+}
+@media (max-width: 809px){
+  body{
+    overflow: scroll;
+  }
+}
+
+/* sdfgnsdfg */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  }
+  /* Add to your CSS file */
+  .rightGrid-nav ul li a.active {
+      color: #362FD9; /* Choose your active color */
+      /* Add any other styles for the active link */
+    }
+    
+  .left-ribbon{
+      background-color: #22A699;
+      height: 60px;
+      position: absolute;
+      width: 200px;
+      /* margin-left: -10px; */
+      margin-top: 20px;
+      border-radius: 0 7px 7px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      
+  }
+  .left-ribbon:hover{
+      width: 250px;
+      /* margin-left: -10px; */
+      border-radius: 0 7px 7px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+  }
+  .logo-wrapper{
+      /* border: 2px solid red; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .logo-wrapper h2{
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 1.6rem;
+      color: #fff;
+  }
+  .logo-wrapper h2 span{
+      color: #11009E;
+  }
+  .left-ribbon::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 16px;
+        height: 32px;
+        background-color: #22A699;
+      /* border-top: 50px solid #0027b6; */
+      /* border-left: 10px solid transparent; */
+      border-radius: 0 0 0 16px;
+      display: block;
+  }
+  .left-ribbon::after{
+      background: linear-gradient(180deg, rgba(0,0,0,0.50940126050420167) 0%, rgba(0,0,0,0) 150%);
+        display: block;
+        content: "";
+        width: 16px;
+        height: 32px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        border-radius: 16px 0 0 16px;
+  }
+  .leftGrid-content{
+      /* border: 2px solid red; */
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+      flex-direction: column;
+      padding-top: 120px;
+      padding-left: 80px;
+      
+  }
+  .leftGrid-content-wrapper-text h1{
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 3rem;
+      color: #22A699;
+      margin-bottom: 20px;
+  }
+  .leftGrid-content-wrapper-text h3{
+      margin-top: -30px;
+      font-size: 1.5rem;
+  }
+  .leftGrid-content-wrapper
+  {
+      line-height: 1.7;
+  }
+  
+  
+  
+    /*    SOCIAL MEDIA ICON ANIMATION */
+    .parent {
+      margin-top: 40px;
+      /* width: 450px; */
+      height: 300px;
+      max-width: 530px;
+      perspective: 1000px;
+    }
+    
+  
+    .contact-card {
+      height: 100%;
+      border-radius: 20px;
+      /* background: linear-gradient(135deg, #116D6E 0%, #088395); */
+      background: linear-gradient(135deg, rgb(0, 255, 214) 0%, rgb(8, 226, 96) 100%);
+      transition: all 0.5s ease-in-out;
+      transform-style: preserve-3d;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    
+    .glass {
+      transform-style: preserve-3d;
+      position: absolute;
+      inset: 8px;
+      border-radius: 55px;
+      border-top-right-radius: 100%;
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.249) 0%, rgba(255, 255, 255, 0.715) 100%);
+      /* -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px); */
+      transform: translate3d(0px, 0px, 25px);
+      border-left: 2px solid white;
+      border-bottom: 1px solid white;
+      transition: all 0.5s ease-in-out;
+    }
+    
+    .content {
+      padding: 100px 60px 0px 30px;
+      transform: translate3d(0, 0, 26px);
+      /* border: 2px solid red; */
+    }
+    
+    .content .title {
+      display: block;
+      color: #ffffff;
+      font-weight: 900;
+      font-size: 25px;
+      /* border: 2px solid red; */
+      margin-bottom: 100px;
+    }
+    
+    .content .text {
+      display: block;
+      color: rgba(0, 137, 78, 0.7647058824);
+      font-size: 15px;
+      margin-top: 20px;
+    }
+    
+    .bottom {
+      padding: 10px 12px;
+      transform-style: preserve-3d;
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transform: translate3d(0, 0, 26px);
+    }
+    
+   
+    
+  
+    
+    .bottom .social-buttons-container {
+      display: flex;
+      gap: 20px;
+      transform-style: preserve-3d;
+     
+    }
+    
+    .bottom .social-buttons-container .social-button {
+      width: 50px;
+      aspect-ratio: 1;
+      padding: 5px;
+      background: rgb(255, 255, 255);
+      border-radius: 50%;
+      border: none;
+      display: grid;
+      place-content: center;
+      box-shadow: rgba(5, 71, 17, 0.5) 0px 7px 5px -5px;
+      font-size: 18px;
+    }
+    
+    .bottom .social-buttons-container .social-button:first-child {
+      transition: transform 0.2s ease-in-out 0.4s, box-shadow 0.2s ease-in-out 0.4s;
+    }
+    
+    .bottom .social-buttons-container .social-button:nth-child(2) {
+      transition: transform 0.2s ease-in-out 0.6s, box-shadow 0.2s ease-in-out 0.6s;
+    }
+    
+    .bottom .social-buttons-container .social-button:nth-child(3) {
+      transition: transform 0.2s ease-in-out 0.8s, box-shadow 0.2s ease-in-out 0.8s;
+    }
+    .bottom .social-buttons-container .social-button:nth-child(4) {
+      transition: transform 0.2s ease-in-out 1s, box-shadow 0.2s ease-in-out 1s;
+    }
+    .bottom .social-buttons-container .social-button:nth-child(5) {
+      transition: transform 0.2s ease-in-out 1.2s, box-shadow 0.2s ease-in-out 1.2s;
+    }
+    
+    
+    
+    .bottom .social-buttons-container .social-button:hover {
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+      background-color: #22A699;
+      font-size: 25px;
+    }
+    
+    .bottom .social-buttons-container .social-button:hover .svg {
+      fill: white;
+    }
+    
+    .bottom .social-buttons-container .social-button:active {
+      background: rgb(255, 234, 0);
+    }
+    
+    .bottom .social-buttons-container .social-button:active .svg {
+      fill: black;
+    }
+    
+    .logo {
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform-style: preserve-3d;
+    }
+    
+    .logo .circle {
+      display: block;
+      position: absolute;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      top: 0;
+      right: 0;
+      box-shadow: rgba(100, 100, 111, 0.2) -10px 10px 20px 0px;
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+      background: rgba(0, 249, 203, 0.2);
+      transition: all 0.5s ease-in-out;
+    }
+    
+    .logo .circle1 {
+      width: 170px;
+      transform: translate3d(0, 0, 20px);
+      top: 8px;
+      right: 8px;
+    }
+    
+    .logo .circle2 {
+      width: 140px;
+      transform: translate3d(0, 0, 40px);
+      top: 10px;
+      right: 10px;
+      -webkit-backdrop-filter: blur(1px);
+      backdrop-filter: blur(1px);
+      transition-delay: 0.4s;
+    }
+    
+    .logo .circle3 {
+      width: 110px;
+      transform: translate3d(0, 0, 60px);
+      top: 17px;
+      right: 17px;
+      transition-delay: 0.8s;
+    }
+    
+    .logo .circle4 {
+      width: 80px;
+      transform: translate3d(0, 0, 80px);
+      top: 23px;
+      right: 23px;
+      transition-delay: 1.2s;
+    }
+    
+    .logo .circle5 {
+      width: 60px;
+      transform: translate3d(0, 0, 100px);
+      top: 30px;
+      right: 30px;
+      display: grid;
+      place-content: center;
+      transition-delay: 1.6s;
+      color:#fff;
+      font-family: 'Popppins', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    
+    .logo .circle5 .svg {
+      width: 20px;
+      fill: white;
+    }
+    
+    .parent:hover .contact-card {
+      transform: rotate3d(1, 1, 0, 30deg);
+      box-shadow: rgba(5, 71, 17, 0.3) 30px 50px 25px -40px, rgba(5, 71, 17, 0.1) 0px 25px 30px 0px;
+    }
+    
+    .parent:hover .contact-card .bottom .social-buttons-container .social-button {
+      transform: translate3d(0, 0, 50px);
+      box-shadow: #05471133 -5px 20px 10px 0px;
+    }
+    
+    .parent:hover .contact-card .logo .circle2 {
+      transform: translate3d(0, 0, 60px);
+    }
+    
+    .parent:hover .contact-card .logo .circle3 {
+      transform: translate3d(0, 0, 80px);
+    }
+    
+    .parent:hover .contact-card .logo .circle4 {
+      transform: translate3d(0, 0, 100px);
+    }
+    
+    .parent:hover .contact-card .logo .circle5 {
+      transform: translate3d(0, 0, 120px);
+    }

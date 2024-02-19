@@ -1,0 +1,260 @@
+
+/* this card is inspired form this - https://georgefrancis.dev/ */
+
+.card {
+    --border-radius: 0.75rem;
+    --primary-color: #22A699;
+    --secondary-color: #3c3852;
+    /* width: 210px; */
+    width: 100%;
+    font-family: "Arial";
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    background: #f9f9f9;
+    /* box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%); */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: relative;
+    margin-top: 60px;
+  }
+  
+  .card > * + * {
+    margin-top: 1.1em;
+  }
+  
+ 
+  .card .card__content {
+    color: var(--secondary-color);
+    font-size: 0.86rem;
+  }
+  
+  .card .card__title {
+    padding: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  .card .card__date {
+    color: #6e6b80;
+    font-size: 0.8rem;
+  }
+  
+  .card .card__arrow {
+    position: absolute;
+    background: var(--primary-color);
+    padding: .7rem;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    bottom: 0;
+    right: 0;
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card svg {
+    transition: 0.2s;
+  }
+  
+  /* hover */
+  .card:hover .card__title {
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
+  
+  .card:hover .card__arrow {
+    background: #111;
+  }
+  
+  .card:hover .card__arrow svg {
+    transform: translateX(5px);
+  }
+  .card-image{
+    width: 300px;
+    height: 150px;
+    /* border: 2px solid blue; */
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .card-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  @media (max-width: 429px){
+    .card-image{
+      width: 270px;
+
+    }
+  }
+  @media (max-width: 397px){
+    .card-image{
+      width: 240px;
+
+    }
+  }
+
+  @media (max-width: 356px){
+    .card-image{
+      width: 220px;
+
+    }
+ }
+ @media (max-width: 343px){
+  .card-image{
+    width: 190px;
+
+  }
+}
+  /* EXPERIENCE CARD STYLEING */
+.experience{
+  height: 100vh;
+}
+  .experience-card {
+    /* width: 550px; */
+    /* height: 250px; */
+    transition: all 0.2s;
+    position: relative;
+    cursor: pointer;
+    margin-left: 60px;
+    /* margin-top: 10px; */
+    margin-top: -40px;
+    margin-bottom: 100px;
+  }
+  
+  .experience-card-inner {
+    width: inherit;
+    height: inherit;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+  }
+  
+  .experience-card:hover {
+    transform: scale(1.04) rotate(1deg);
+  }
+  
+  .experience-circle {
+    width: 100px;
+    height: 100px;
+    background: repeating-linear-gradient(48deg, rgb(8, 226, 96) 0%, rgb(0, 255, 214) 100%);
+    border-radius: 35% 30% 75% 30% / 49% 30% 70% 51%;
+    position: absolute;
+    animation: move-up6 2s ease-in infinite alternate-reverse;
+  }
+  
+  .experience-circle:nth-child(1) {
+    top: -25px;
+    left: -25px;
+  }
+  
+  .experience-circle:nth-child(2) {
+    bottom: -25px;
+    right: -25px;
+    animation-name: move-down1;
+  }
+  
+  @keyframes move-up6 {
+    to {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes move-down1 {
+    to {
+      transform: translateY(10px);
+    }
+  }
+  
+  /* experience inner card styling */
+  .experience-header{
+    /* border: 2px solid rebeccapurple; */
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    
+  }
+  .company{
+    /* border: 2px solid red; */
+    margin-left: 50px;
+    /* padding-right: 50px; */
+  }
+  .company p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    color: #22A699;
+  }
+  @media (max-width: 390px){
+    .company{
+      margin-left: 20px;
+    }
+    .company p{
+      font-size: 19px;
+      font-weight: 500;
+    }
+  }
+  .year p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: #3c3852;
+  }
+
+  .experience-subheader{
+    /* border: 2px solid red; */
+    padding: 10px;
+    
+  }
+  .experience-subheader p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    
+  }
+  .gradient-text {
+    background-image: linear-gradient(48deg, rgb(8, 226, 96) 0%, rgb(0, 255, 214) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .experience-body{
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .experience-body span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(2, 132, 54);
+  }
+  .experience-body-tech{
+    /* border: 2px solid red; */
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+  flex-wrap: wrap;
+   
+  }
+  .experience-body-tech ul{
+    list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  }
+  .experience-body-tech ul li{
+    list-style-type: none;
+    margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 8px;
+  /* background-color: #f2f2f2; */
+  background: repeating-linear-gradient(48deg, rgb(8, 226, 96) 0%, rgb(0, 255, 214) 100%);
+  border-radius: 5px;
+  color: #fff;
+  }
+  
+
+  

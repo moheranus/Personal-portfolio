@@ -1,0 +1,211 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+.left-ribbon{
+    background-color: #22A699;
+    height: 60px;
+    position: absolute;
+    width: 200px;
+    /* margin-left: -10px; */
+    margin-top: 20px;
+    border-radius: 0 7px 7px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    
+}
+.left-ribbon:hover{
+    width: 250px;
+    /* margin-left: -10px; */
+    border-radius: 0 7px 7px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.logo-wrapper{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-wrapper h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #fff;
+}
+.logo-wrapper h2 span{
+    color: #11009E;
+}
+.left-ribbon::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 16px;
+      height: 32px;
+      background-color: #22A699;
+    /* border-top: 50px solid #0027b6; */
+    /* border-left: 10px solid transparent; */
+    border-radius: 0 0 0 16px;
+    display: block;
+}
+.left-ribbon::after{
+    background: linear-gradient(180deg, rgba(0,0,0,0.50940126050420167) 0%, rgba(0,0,0,0) 150%);
+      display: block;
+      content: "";
+      width: 16px;
+      height: 32px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      border-radius: 16px 0 0 16px;
+}
+.leftGrid-content{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    padding-top: 120px;
+    padding-left: 80px;
+    
+}
+@media (max-width: 809px){
+    .leftGrid-content{
+        /* padding-top: 80px; */
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+}
+.leftGrid-content-wrapper-text h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #22A699;
+    margin-bottom: 20px;
+    margin-top: -40px;
+}
+.leftGrid-content-wrapper-text h3{
+    margin-top: -30px;
+    font-size: 1.5rem;
+}
+.leftGrid-content-wrapper
+{
+    line-height: 1.7;
+}
+nav {
+    /* border: 2px solid red; */
+    padding-top: 10px;
+}
+nav ul li{
+
+    list-style: none;
+    /* margin-bottom: -20px; */
+}
+a {
+    color: #22A699;
+    font-size: 1rem;
+    text-decoration: none;
+    /* margin-top: 1em; */
+    margin-top: -30px;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.5em;
+    margin-left: -0.5em;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  a:before,
+a:after {
+  position: absolute;
+  content: '';
+  border-bottom: 3px solid #43766C;
+  border-radius: 1em;
+  bottom: 0.3em;
+  transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+a:before {
+  width: 1em;
+  transform-origin: left;
+}
+
+a:after {
+  width: 82%;
+  left: 1em;
+  transform: translateX(110%);
+}
+
+a:hover:before {
+  transform: scaleX(0.3);
+}
+
+a:hover:after {
+  transform: translateX(0);
+}
+.icon-wrapper{
+    /* border: 2px solid red; */
+    margin-top: 30px;
+    
+}
+.icon-wrapper ul{
+    display: flex;
+   
+}
+.icon-wrapper ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+.icon{
+    font-size: 1.7rem;
+    color: #22A699;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.icon:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+}
+#instagram{
+    color:#c32aa3;
+}
+#linkedin{
+    color: #0a66c2;
+}
+#github{
+    color: #211F1F;
+}
+#telegram{
+    color: #0088cc;
+}
+#gmail{
+    color: #D44638;
+    font-size: 2rem;
+    margin-top: -4px;
+}
+@keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .icon-wrapper ul li {
+    animation: bounceIn 0.5s ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: calc(var(--index) * 0.2s);
+  }
+
+  

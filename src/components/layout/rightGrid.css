@@ -1,0 +1,163 @@
+.right-grid{
+    /* border: 2px solid red; */
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 120px 20px 0 -4px;
+}
+ .right-grid #experience{
+   height: 100vh;
+    margin: 120px 20px 0 0;
+    padding-top: 10px;
+ }
+ .right-grid #about{
+   height: 100vh;
+    padding-top: 50px;
+    padding: 30px;
+ }
+ .right-grid #project{
+    height: 100vh;
+    margin: 720px 20px 0 20px;
+ }
+ @media screen and (max-width: 966px){
+
+    #project{
+         /* margin-top: 300px; */
+         margin-top: 400px !important;
+         
+         padding-top: 1px;
+    }
+ }
+ @media screen and (max-width: 866px){
+ #experience{
+   margin-top: 200px !important;
+ }
+   #project{
+      margin-top: 450px !important;
+   }
+ }
+ @media screen and (max-width: 856px){
+   #project{
+      margin-top: 550px !important;
+   }
+ }
+ @media screen and (max-width: 812px){
+   #experience{
+      margin-top: 250px !important;
+   }
+ }
+ @media (max-width: 809px){
+   #experience{
+     margin-top: -50px !important;
+   }
+   #project{
+      margin-top: 100px !important;
+   }
+ }
+ @media (max-width: 809px){
+   #experience{
+     margin-top: -10px !important;
+   }
+   #project{
+      margin-top: 150px !important;
+   }
+ }
+ @media (max-width: 609px){
+   #project{
+      margin-top: 200px !important;
+      margin-left: 30px !important;
+   }
+   #experience{
+      margin-top: 30px !important;
+     
+   }
+ }
+ @media (max-width: 545px){
+   #project{
+      margin-top: 250px !important;
+      /* margin-left: 30px !important; */
+   }
+   #experience{
+      margin-top: 30px !important;
+     
+   }
+ }
+ @media (max-width: 533px){
+   #experience{
+      margin-top: 80px !important;
+   }
+ }
+ @media (max-width: 500px){
+   #project{
+      margin-top: 300px !important;
+   }
+ }
+ @media (max-width: 482px){
+#project{
+   margin-top: 370px !important;
+}
+#experience{
+   margin-top: 120px !important;
+ }
+}
+@media (max-width: 441px){
+    #project{
+         margin-top: 420px !important;
+    }
+      #experience{
+         margin-top: 170px !important;
+      }
+}
+
+@media (max-width: 429px){
+   #project{
+      margin-top: 470px !important;
+}
+}
+@media (max-width: 410px){
+   #experience{
+      margin-top: 230px !important;
+   }
+   #project{
+      margin-top: 570px !important;
+}}
+/* @media (max-width: 380px){
+   #experience{
+      margin-top: 380px !important;
+   }
+   
+} */
+@media (max-width: 375px){
+   #experience{
+      margin-top: 330px !important;
+   }
+   #project{
+      margin-top: 700px !important;
+   }
+}
+@media (max-width: 361px){
+   #project{
+      margin-top: 520px !important;
+      /* border: 2px solid red; */
+   }
+}
+@media (max-width: 356px){
+   #experience{
+      margin-top: 370px !important;
+   }
+   #project{
+      /* margin-top: 700px !important; */
+   }
+}
+@media (max-width: 343px){
+   #project{
+      /* margin-top: 740px !important; */
+   }
+}
+@media (max-width: 333px){
+   #experience{
+      margin-top: 390px !important;
+   }
+   #project{
+      /* margin-top: 800px !important; */
+   }
+}

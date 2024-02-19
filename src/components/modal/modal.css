@@ -1,0 +1,84 @@
+ .modal-header-text{
+    font-family: 'popins', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #22A699;;
+}
+.modal-p{
+    font-family: 'popins', sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 400;
+    color: #3c3852;
+    letter-spacing: 1px;
+    padding-top: 15px;
+}
+@media (max-width: 461px){
+  .carousel .thumbs{
+    white-space: wrap;
+  }
+  .thumb{
+    width: 50px !important;
+  }
+}
+.react-responsive-modal-closeButton{
+    background-color: #94ffeb;
+    border-radius: 50%;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.custom-modal {
+    animation: customEnterModalAnimation 0.6s ease-out;
+    border-radius: 10px;
+  }
+  
+  .custom-overlay {
+    animation: customEnterOverlayAnimation 0.6s ease-out;
+  }
+  
+  .react-responsive-modal-modal.custom-modal.react-responsive-modal-isClosing {
+    animation: customLeaveModalAnimation 0.6s ease-in;
+  }
+  
+  .react-responsive-modal-modal.custom-overlay.react-responsive-modal-isClosing {
+    animation: customLeaveOverlayAnimation 0.6s ease-in;
+  }
+  
+  @keyframes customEnterOverlayAnimation {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes customLeaveOverlayAnimation {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  
+  @keyframes customEnterModalAnimation {
+    0% {
+      transform: scale(0.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes customLeaveModalAnimation {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.2);
+    }
+  }
+  
